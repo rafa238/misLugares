@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="notificaciones"
+        android:title="Mandar Notificaciones"
+        android:summary="Notificar si estamos cerca de un lugar"/>
+    <EditTextPreference
+        android:key="maximo"
+        android:title="Maximo de lugares a mostrar"
+        android:summary="Limita el numero de valores que se muestran"
+        android:inputType="number"
+        android:defaultValue="12"/>
+    <ListPreference
+        android:key="orden"
+        android:title="Crietrio de ordenacion"
+        android:summary="Que lugares quieres que aparezcan antes"
+        android:entries="@array/tiposOrden"
+        android:entryValues="@array/tiposOrdenValores"
+        android:defaultValue="0"/>
+</PreferenceScreen>
